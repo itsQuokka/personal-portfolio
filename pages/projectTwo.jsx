@@ -25,9 +25,9 @@ const projectTwo = () => {
 						error ipsam voluptate? Magnam suscipit, delectus expedita rem ducimus officia maiores asperiores explicabo maxime optio culpa accusamus error, eveniet enim nisi doloribus quam aliquam
 						inventore facere numquam necessitatibus, dolorem corrupti ut nemo. Voluptate id omnis obcaecati!
 					</p>
-					<button className="px-8 py-2 mt-4 mr-8 bg-gray-400 " disabled>
-						Demo
-					</button>
+					<a target="_blank" rel="noopener noreferrer" href="https://discord.gg/W44QsvADvK" aria-label="Discord Link">
+						<button className="px-8 py-2 mt-4 mr-8 ">Demo</button>
+					</a>
 					<a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="https://github.com/itsQuokka/Baymax-II">
 						<button className="px-8 py-2 mt-4 hover:-translate-y-0.5">Code</button>
 					</a>
