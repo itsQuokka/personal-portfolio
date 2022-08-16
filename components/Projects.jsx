@@ -21,7 +21,7 @@ const Projects = () => {
 
 					<div className=" h-auto">
 						<div className="mr-[10px]">
-							<ProjectItem title="Portfolio" backgroundImg={baymax} projectUrl="/projectOne" />
+							<ProjectItem title="Portfolio" backgroundImg={baymax} projectUrl="/projectTwo" />
 						</div>
 					</div>
 

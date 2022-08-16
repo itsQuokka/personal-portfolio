@@ -14,12 +14,16 @@ const Navbar = () => {
 	const router = useRouter();
 
 	useEffect(() => {
+		if (router.asPath === '/login') {
+			setNavBg('#ffffff');
+			setLinkColor('#ffffff');
+		}
 		if (router.asPath === '/projectOne' || router.asPath === '/projectTwo' || router.asPath === '/projectThree') {
 			setNavBg('transparent');
-			setLinkColor('#ecf0f3');
+			setLinkColor('#ffffff');
 		} else {
 			setNavBg('#ffffff');
-			setLinkColor('#1f2937');
+			setLinkColor('#484888');
 		}
 	}, [router]);
 
@@ -31,15 +35,20 @@ const Navbar = () => {
 		const handleShadow = () => {
 			if (window.scrollY >= 90) {
 				setShadow(true);
+				setLinkColor('#484888');
 			} else {
 				setShadow(false);
+				setLinkColor('#484888');
 			}
 		};
 		window.addEventListener('scroll', handleShadow);
 	}, []);
 
 	return (
-		<div style={{ backgroundColor: `${navBg}` }} className={shadow ? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300' : 'fixed w-full h-20 ease-in-out duration-300 z-[100]'}>
+		<div
+			style={{ backgroundColor: `${navBg}` }}
+			className={shadow ? 'fixed w-full h-20 shadow-xl z-[100] shadow-gray-400 ease-in-out duration-300' : 'fixed w-full h-20 ease-in-out duration-300 z-[100]'}
+		>
 			<div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
 				<Link href="/">
 					<Image src="/assets/logo.png" width="100" height="50" alt="/" />
