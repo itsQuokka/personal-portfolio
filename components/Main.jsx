@@ -1,39 +1,58 @@
-import React from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
 
 const Main = () => {
 	return (
-		<div id="home" className="w-full h-screen text-center">
-			<div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
-				<div>
-					<p className="uppercase text-sm tracking-widest text-gray-600">Let&apos;s build something together!</p>
-					<h1 className="py-4 text-gray-600">
-						Hi, I&apos;m <span className="text-[#484888]">Aidan</span>
-					</h1>
-					<h1 className="py-2 text-gray-600">A Front-End Web Developer</h1>
-					<p className="py-4 text-gray-600 max-w-[70%] m-auto">
-						I&apos;m a front-end web developer, specializing in the beautiful designing of digital experiences. Currently, I am focused on building responsive front-end web applications.
+		<div
+			id="main"
+			className="w-full md:h-screen p-2 flex items-center"
+		>
+			<div className="max-w-[1240px] m-auto md:grid grid-cols-2 gap-2 pt-[20px]">
+				<div className="col-span-1">
+					<p className="uppercase text-xl tracking-widest text-gray-400 mt-[80px] font-bold">
+						Space
 					</p>
-					<div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-						<a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/aidan-douglas-aa86801a3/">
-							<div className="rounded-full bg-[#484888] text-white shadow-lg shadow-gray-400 hover:shadow-[#484888] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-								<FaLinkedinIn />
-							</div>
-						</a>
-						<a target="_blank" rel="noopener noreferrer" aria-label="Github" href="https://github.com/itsquokka">
-							<div className="rounded-full bg-[#484888] text-white shadow-lg shadow-gray-400 hover:shadow-[#484888] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-								<FaGithub />
-							</div>
-						</a>
-						<a target="_blank" rel="noopener noreferrer" aria-label="Github" href="mailto:aidan.douglas23@hotmail.com">
-							<div className="rounded-full bg-[#484888] text-white shadow-lg shadow-gray-400 hover:shadow-[#484888] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-								<AiOutlineMail />
-							</div>
-						</a>
+					<h2 className="py-2 text-[#484888]">The Final Frontier</h2>
+					<div className="ml-4">
+						<p className="py-2 text-gray-800">
+							Space exploration began only 60 years ago and look at where we are
+							now! The first man in space was Russian cosmonaut Yuri Gagarin. He
+							completed one orbit of the Earth and beat the Americans to space
+							by only a few months. Some other famous firsts include the first
+							satellite launched into space in 1957. The first animal in space
+							was Laika the dog, also in 1957. John Glenn was the first American
+							in space in 1962. Neil Armstrong was the first man to walk on the
+							Moon in 1969. The first private commercial space mission happened
+							in 2012 when SpaceX send an unmanned capsule with supplies to the
+							International Space Station. Just last year, in 2021, the original
+							captain of Star Trek's Enterprise, William Shatner, became the
+							oldest person in space at the age of 90 years old. In 2013,
+							Canadian Chris Hadfield created the first music video in space.
+						</p>
+						<p className="py-2 text-gray-800">
+							Only 9 Canadians have ever been in space. Marc Garneau was the
+							first to go to space in 1984. In 2013, Canadian Col. Chris
+							Hadfield joined the crew of the International Space Station. He
+							became famous during his mission to space by documenting the daily
+							life of an astronaut (such as "how astronauts sleep") using social
+							media and by sharing breathtaking photographs on his Twitter
+							account. He also charmed his fans with his rendition of David
+							Bowie's "Space Oddity".
+						</p>
 					</div>
+					<div className="flex mt-10 pr-10 pl-4 p-0.5 mx[-180px] h-10">
+						<div className="m-[1.1rem] w-[300px] mx-[-180px] p-0.5 bg-[#484888] "></div>
+						<div className="w-[310px] bg-[#484888] shadow-lg"></div>
+					</div>
+				</div>
+				<div className="col-span-1 flex ml-6 -skew-y-6 drop-shadow-md scale-[80%]">
+					<Image
+						className="rounded-xl bg-[#484888]"
+						src="/assets/crew_ready.jpg"
+						width="1465px"
+						height="1041px"
+						alt="/"
+					/>
 				</div>
 			</div>
 		</div>
